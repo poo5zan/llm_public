@@ -34,3 +34,6 @@ Since, we haven't started our webUI service yet. The red mark is valid.
 
 
 8. Access previous public url, you should now see a login page. Create a new account, then start using the app.
+
+
+<img src="https://github.com/poo5zan/llm_public/blob/main/open_web_ui/images/open_web_ui_signin.png" width="300" height="300" />
