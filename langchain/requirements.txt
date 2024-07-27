@@ -1,0 +1,10 @@
+langchain-chroma
+pypdf
+langchain
+langchain-community
+chromadbx
+ulid-py
+nanoid
+tqdm
+pandas
+chromadb-client
