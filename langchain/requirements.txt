@@ -1,10 +1,14 @@
 langchain-chroma
 pypdf
+pymupdf
+pypdfium2
 langchain
 langchain-community
+chromadb
 chromadbx
 ulid-py
 nanoid
 tqdm
 pandas
-chromadb-client
+joblib
+pymilvus
