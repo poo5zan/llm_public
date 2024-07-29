@@ -12,3 +12,5 @@ tqdm
 pandas
 joblib
 pymilvus
+langchain_milvus
+sentence_transformers
