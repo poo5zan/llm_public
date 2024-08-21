@@ -2,3 +2,4 @@
 .venv_*
 langchain/chroma/
 langchain/volumes/milvus/
+*.pyc
