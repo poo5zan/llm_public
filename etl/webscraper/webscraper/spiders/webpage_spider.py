@@ -6,9 +6,10 @@ from webscraper.time_helper import TimeHelper
 
 class WebpageCrawler(Spider):
     name = "webpage_spider"
-    def __init__(self, url: str = None):
+    def __init__(self, url: str = None, run_id: str = None):
         super().__init__()
-        self.url = "https://docs.scrapy.org/en/latest/intro/tutorial.html"
+        self.url = url
+        self.run_id = run_id
         self.time_helper = TimeHelper()
 
     def start_requests(self):

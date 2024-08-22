@@ -1,9 +1,11 @@
 import json
+import os
 from itemadapter import ItemAdapter
 
 class JsonWriterPipeline:
     def open_spider(self, spider):
-        self.file = open("items.jsonl", "a")
+        file_path = os.path.join("./output", f'{spider.run_id}.jsonl')
+        self.file = open(file_path, "a")
 
     def close_spider(self, spider):
         self.file.close()
