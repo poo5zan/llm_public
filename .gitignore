@@ -4,3 +4,9 @@ langchain/chroma/
 langchain/volumes/milvus/
 *.pyc
 etl/webscraper/output/
+etl/webscraper/twistd.pid
+etl/webscraper/build/
+etl/webscraper/eggs/
+etl/webscraper/logs/
+etl/webscraper/dbs/
+etl/webscraper/project.egg-info/

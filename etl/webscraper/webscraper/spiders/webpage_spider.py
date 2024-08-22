@@ -6,10 +6,15 @@ from webscraper.time_helper import TimeHelper
 
 class WebpageCrawler(Spider):
     name = "webpage_spider"
-    def __init__(self, url: str = None, run_id: str = None):
+    def __init__(self, *args, **kwargs):
         super().__init__()
-        self.url = url
-        self.run_id = run_id
+        self.url = kwargs.get("url", "")
+        if self.url == "":
+            raise ValueError("URL is required to scrape")
+        self.run_id = kwargs.get("run_id", "")
+        if self.run_id == "":
+            raise ValueError("run_id is required")
+
         self.time_helper = TimeHelper()
 
     def start_requests(self):
