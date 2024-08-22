@@ -63,7 +63,8 @@ EXTENSIONS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "webscraper.pipelines.WebscraperPipeline": 300,
+   # "webscraper.pipelines.WebscraperPipeline": 300,
+   "webscraper.json_writer_pipeline.JsonWriterPipeline": 200
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

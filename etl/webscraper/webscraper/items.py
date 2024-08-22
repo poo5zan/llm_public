@@ -9,3 +9,4 @@ class WebscraperItem(Item):
     # define the fields for your item here like:
     text = Field()
     url = Field()
+    created_date = Field()

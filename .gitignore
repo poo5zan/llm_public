@@ -3,3 +3,4 @@
 langchain/chroma/
 langchain/volumes/milvus/
 *.pyc
+etl/webscraper/items.jsonl
