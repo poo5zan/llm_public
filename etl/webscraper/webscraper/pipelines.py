@@ -9,6 +9,7 @@
 
 from storage_service.storage_provider import StorageProvider
 from storage_service.storage_provider_factory import StorageProviderFactory
+from storage_service.storage_service import StorageService
 
 class WebscraperPipeline:
     """
@@ -21,11 +22,15 @@ class WebscraperPipeline:
             storing the scraped item in a database
     """
 
+    def open_spider(self, spider):
+        storage_provider_factory = StorageProviderFactory(StorageProvider.FILE_STORAGE)
+        self.storage_service = StorageService(storage_provider_factory.get_storage_provider_instance())
+        
     def process_item(self, item, spider):
         print('in process pipeline ', item.get('url'))
         # store data, call storage service
         # save data to file
-
-        sto = StorageProviderFactory(StorageProvider.FILE_STORAGE)
-
+        self.storage_service.save()
+        
         return item
+    
